@@ -1,0 +1,14 @@
+IMPORTANTE: Agregar imagen del proyecto "Hablemos de Cine"
+
+Por favor, agrega una captura de pantalla de tu proyecto "Hablemos de Cine" 
+con el nombre: hablemos-cine.jpg
+
+Recomendaciones:
+- Tamaño: 800x600px o similar
+- Formato: JPG o PNG
+- Captura la página principal del proyecto
+- Colócala en la carpeta: public/
+
+El proyecto está visible en: https://hablemosdecine.vercel.app/
+
+Una vez agregada la imagen, el proyecto se mostrará correctamente en el portafolio.
