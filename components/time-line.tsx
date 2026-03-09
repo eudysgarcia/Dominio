@@ -1,6 +1,5 @@
 "use client"
 import { dataAboutPage } from "@/data";
-import { div } from "framer-motion/client";
 
 const TimeLine = () => {
     return ( 
