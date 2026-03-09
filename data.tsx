@@ -1,4 +1,4 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Github, Monitor, Rocket, Computer, Crop, Book, Pencil, Settings, Database, Code, Layers, GraduationCap, Briefcase, Globe, Server, Phone, Mail, MapPin } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Github, Monitor, Computer, Crop, Book, Pencil, Settings, Database, GraduationCap, Server } from "lucide-react";
 
 export const personalInfo = {
     name: "Eudys García Saviñón",
@@ -13,8 +13,8 @@ export const personalInfo = {
     phone: "829-774-5391",
     email: "eudysgs.s@gmail.com",
     website: "www.eudexcode.com",
-    profileImage: "/home-5.png",
-    avatarImage: "/avatar-works.png",
+    profileImage: "./home-5.png",
+    avatarImage: "./avatar-works.png",
     cvLinks: {
         es: "https://drive.google.com/file/d/1XiTlMT6ivNmmfX4Q2OhIDBQS9Y9oXp_O/view?usp=sharing",
         en: "https://drive.google.com/file/d/1Q75dT9Uk-cQPiyS-cdcHkyG-Bla2r8Uc/view?usp=sharing"
@@ -346,7 +346,7 @@ export const dataPortfolio = [
     {
         id: 1,
         title: "Hablemos de Cine",
-        image: "/cinetalk.png",
+        image: "./cinetalk.png",
         urlGitlab: "https://github.com/eudysgarcia/HDC-Server",
         urlDemo: "https://hablemosdecine.vercel.app/",
         technologies: ["React", "Next.js", "Tailwind CSS", "API"],
@@ -358,7 +358,7 @@ export const dataPortfolio = [
     {
         id: 2,
         title: "Tic Tac Toe",
-        image: "/image-1.png",
+        image: "./image-1.png",
         urlGitlab: "https://github.com/eudysgarcia/TicTacToe",
         urlDemo: "#!",
         technologies: ["React", "JavaScript", "CSS"],
@@ -370,7 +370,7 @@ export const dataPortfolio = [
     {
         id: 3,
         title: "Color Game",
-        image: "/image-2.png",
+        image: "./image-2.png",
         urlGitlab: "https://github.com/eudysgarcia/Color-Game",
         urlDemo: "#!",
         technologies: ["JavaScript", "HTML", "CSS"],
@@ -382,7 +382,7 @@ export const dataPortfolio = [
     {
         id: 4,
         title: "Weather App",
-        image: "/image-3.png",
+        image: "./image-3.png",
         urlGitlab: "https://github.com/eudysgarcia/WeatherApp",
         urlDemo: "#!",
         technologies: ["JavaScript", "API", "CSS"],
@@ -394,7 +394,7 @@ export const dataPortfolio = [
     {
         id: 5,
         title: "Quiz Game",
-        image: "/image-4.png",
+        image: "./image-4.png",
         urlGitlab: "https://github.com/eudysgarcia/QuizGame",
         urlDemo: "#!",
         technologies: ["JavaScript", "HTML", "CSS"],
@@ -417,7 +417,7 @@ export const dataTestimonials = [
             es: "Trabajar con Eudys ha sido una experiencia enriquecedora. Su capacidad para mantener la calma bajo presión y resolver problemas de manera eficiente siempre me ha impresionado. Además, su carácter accesible y disposición para colaborar lo convierten en un miembro valioso del equipo y en una persona con la que es un gusto trabajar.",
             en: "Working with Eudys has been an enriching experience. His ability to stay calm under pressure and solve problems efficiently has always impressed me. Additionally, his approachable character and willingness to collaborate make him a valuable team member and someone pleasant to work with."
         },
-        imageUrl: "/profile1.png",
+        imageUrl: "./profile1.png",
         phone: "809-828-3462"
     },
     {
@@ -431,7 +431,7 @@ export const dataTestimonials = [
             es: "Trabajar con Eudys es una experiencia inigualable. Su dedicación y entusiasmo contagian a todo el equipo. Como persona, es alguien de fiar, siempre dispuesto a echar una mano. En el trabajo, su atención al detalle y su creatividad destacan en cada proyecto.",
             en: "Working with Eudys is an unparalleled experience. His dedication and enthusiasm are contagious to the whole team. As a person, he is trustworthy, always willing to lend a hand. At work, his attention to detail and creativity stand out in every project."
         },
-        imageUrl: "/profile2.png",
+        imageUrl: "./profile2.png",
         phone: "809-265-6979"
     },
     {
@@ -445,7 +445,7 @@ export const dataTestimonials = [
             es: "Conocí a Eudys hace años y puedo decir sin dudar que es una de las personas más amables y trabajadoras que he encontrado. Su habilidad para resolver problemas y su capacidad de liderazgo son impresionantes. Fuera del trabajo, su empatía y buen humor hacen que todos se sientan valorados.",
             en: "I met Eudys years ago and can say without hesitation that he is one of the kindest and hardest-working people I have encountered. His problem-solving skills and leadership ability are impressive. Outside of work, his empathy and good humor make everyone feel valued."
         },
-        imageUrl: "/profile3.png",
+        imageUrl: "./profile3.png",
     },
     {
         id: 4,
@@ -458,7 +458,7 @@ export const dataTestimonials = [
             es: "Eudys siempre aporta una energía positiva al ambiente laboral. Es increíblemente organizado y eficiente, lo cual nos ha ayudado a cumplir nuestros objetivos una y otra vez. A nivel personal, es alguien en quien puedes confiar y con quien es fácil formar una amistad duradera.",
             en: "Eudys always brings positive energy to the work environment. He is incredibly organized and efficient, which has helped us meet our goals time and time again. On a personal level, he is someone you can trust and with whom it is easy to form a lasting friendship."
         },
-        imageUrl: "/profile4.png",
+        imageUrl: "./profile4.png",
         phone: "829-877-7227"
     },
 ];
@@ -480,3 +480,13 @@ export const references = [
         phone: "829-877-7227"
     }
 ];
+
+export const dataAboutPage = experience.map((item) => ({
+  id: item.id,
+  title: item.title.es,
+  date: item.date.es,
+  subtitle: item.company,
+  description: Array.isArray(item.description.es)
+    ? item.description.es.join(". ")
+    : item.description.es,
+}));

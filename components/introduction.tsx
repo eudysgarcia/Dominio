@@ -44,7 +44,7 @@ const Introduction = () => {
                     className="mb-8 md:mb-0 md:mr-20"
                 >
                     <Image 
-                        src="/home-5.png" 
+                        src="./home-5.png" 
                         priority 
                         width="1200" 
                         height="1200" 
